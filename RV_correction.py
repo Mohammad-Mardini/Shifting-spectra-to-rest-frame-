@@ -26,6 +26,7 @@ fluxSpectrum = Spectrum[:,1][ind[0]]
 # Check the selected lines
 plt.plot(waveTemplate, fluxTemplate, 'b.-')
 plt.plot(waveSpectrum, fluxSpectrum, 'r.-')
+plt.savefig('selected-lines.eps')
 plt.show()
 
 
@@ -48,6 +49,7 @@ else:
 # Check the cross-correlation peak
 plt.plot(rv, cc, 'b-')
 plt.plot(rv[maxind], cc[maxind], 'ro')
+plt.savefig('cross-correlation.eps')
 plt.show()
 
 # Shift wavelength to rest frame
